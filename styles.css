@@ -108,14 +108,9 @@ a:is(:link, :active, :visited).active{
     font-size: 20px;
     border: none;
 }
-/*
-#theme-toggle{
-    background: red;
-} */
 
-#theme-toggle i:last-child{
-    display: none;
-}
+
+
 
 
 
@@ -158,7 +153,7 @@ a:is(:link, :active, :visited).active{
 /* the hero section*/
 .hero{
 position: relative;
-background: linear-gradient(rgba(24, 24, 27, 0.1), rgba(24, 24, 27, 0.3)), url(IMAGES/header-bg-color.png); 
+background: linear-gradient(rgba(24, 24, 27, 0.2), rgba(24, 24, 27, 0.3)), url(IMAGES/header-bg-color.png); 
 
 background-position: center;
 background-size: cover;
@@ -276,4 +271,129 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     font-size: 18px;
     font-weight: 500; 
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.about-me{
+    
+    display: flex;
+    gap: 80px;
+    padding: 0 90px;
+    background: url(IMAGES/header-bg-color.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    
+}
+
+.about-me-left{
+    margin-top: 20px;
+    
+    
+}
+
+.about-me-left img{
+    width: 300px;
+    
+    text-align: center;
+    border-radius: 30px;
+    background: yellowgreen;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+
+.about-me-right{
+    
+    padding: 0 20px;
+}
+
+.about-me-right h1{
+    
+    padding-left: 320px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.about-me-right p{
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+
+}
+
+
+
+.about-me-left-card-container{
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+
+
+
+.about-me-left-card-container .about-me-left-card{
+    border: 2px solid peru;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.about-me-left-card-container .about-me-left-card:hover{
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+    border: 2px solid yellowgreen;
+}
+
+.about-me-left-card-container .about-me-left-card img{
+    width: 30px;
+    padding: 10px 0;
+}
+
+.about-me-left-card-container .about-me-left-card h3{
+    padding-bottom: 10px;
+}
+
+.about-me-left-card-container .about-me-left-card p{
+   color: black;
+    font-size: 18px;
+    line-height: 1.3;
+    font-family: "Poppins",;
+}
+
+.about-me-right .about-me-left-tools{
+    
+    
+}
+
+.about-me-right .about-me-left-tools h4{
+    padding: 40px 0;
+   
+    font-size: 19px;
+}
+
+.about-me-right .about-me-left-tools .about-me-left-tools-pics{
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+
+
+.about-me-right .about-me-left-tools .about-me-left-tools-pics img{
+    border: 1px solid gray;
+    width: 60px;
+    border-radius: 6px;
+    padding: 15px 15px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.about-me-right .about-me-left-tools .about-me-left-tools-pics img:hover{
+    background: black;
+    transform: translateY(-20px);
 }
