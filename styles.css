@@ -397,3 +397,210 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     background: black;
     transform: translateY(-20px);
 }
+
+.services{
+  background: rgb(206, 194, 194, 0.1);
+    padding: 0 120px;
+}
+
+.services .services-top{
+    
+    text-align: center;
+}
+
+.services .services-top h1{
+    padding: 20px 0;
+ 
+    font-size: 35px;
+}
+
+.services .services-top p{
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.services-bottom{
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.services-bottom .services-bottom-card{
+    border: 2px solid peru;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 100px;
+    transition: all 0.3s ease;
+}
+ 
+.services-bottom .services-bottom-card:hover{
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+    border: 2px solid yellowgreen;
+    transform: translateY(-20px);
+}
+
+.services-bottom .services-bottom-card img{
+    width: 40px;
+    margin: 20px 0;
+}
+.services-bottom .services-bottom-card h3{
+    padding-bottom: 20px;
+}
+
+.services-bottom .services-bottom-card p{
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 20px;
+}
+
+.services-bottom .services-bottom-card a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.services-bottom .services-bottom-card a:hover{
+    color: blue;
+    text-decoration: underline 1px;
+}
+
+.services-bottom .services-bottom-card a i{
+    color: peru;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.services-bottom .services-bottom-card a i:hover{
+    color: black;
+}
+
+.my-work{
+    background: url(IMAGES/header-bg-color.png);
+    background-position: center;
+    background-size: cover;
+      padding: 0 120px;
+      padding-bottom: 20px;
+  }
+  
+  .my-work-top{
+      
+      text-align: center;
+  }
+
+  .my-work .my-work-top h1{
+    padding: 20px 0;
+ 
+    font-size: 35px;
+}
+
+.my-work .my-work-top p{
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    padding-bottom: 20px;
+}
+
+
+.my-work-bottom{
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.my-work-bottom .my-work-bottom-card{
+   
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 100px;
+   position: relative;
+}
+
+.my-work-bottom .my-work-bottom-card a{
+    color: black;
+    text-decoration: none;
+}
+
+.my-work-bottom .my-work-bottom-card img{
+    width: 300px;
+}
+
+.my-work-bottom .my-work-bottom-card .overlay{
+    background: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 30px;
+    border-radius: 6px;
+    position: absolute;
+    top: 60%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  
+}
+
+.my-work-bottom .my-work-bottom-card .overlay:hover{
+    background: #2563eb;
+    color: azure;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.my-work-bottom .my-work-bottom-card .overlay-right img{
+    width: 30px;
+   
+    margin-top: -20px;
+}
+
+.my-work-bottom .my-work-bottom-card .overlay-right p{
+    color: gray;
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.my-work-button {
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 20px;
+}
+
+.my-work-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 25px;
+    background: black;
+    border-radius: 20px;
+    
+    transition: all 0.3s ease;
+}
+
+.my-work-button a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 25px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.9);
+}
+
+.my-work-button a i{
+    color: green;
+    margin-left: 5px;
+    font-size: 20px;
+}
