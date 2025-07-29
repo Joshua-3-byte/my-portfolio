@@ -293,10 +293,12 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 .about-me-right h1{
-    padding-left: 320px;
+    padding-left: 130px;
     padding-bottom: 20px;
     padding-top: 20px;
     font-size: 35px;
+    
+    
 }
 
 .about-me-right p{
@@ -979,6 +981,7 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
         background-position: center;
         background-size: cover;
         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        
     }
     
     .about-me-left {
@@ -1005,6 +1008,7 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
         font-size: 24px;
         padding: 0 0 15px 0;
         text-align: center;
+        
     }
     
     .about-me-right p {
