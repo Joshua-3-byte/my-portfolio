@@ -993,6 +993,7 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
         border-radius: 20px;
         background: yellowgreen;
         margin: 0 auto;
+        border: solid 2px red;
     }
     
     .about-me-right {
@@ -1145,23 +1146,27 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
         font-size: 1rem;
       }
 
-      .footer-top {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
-    .footer-links {
-        flex-direction: column;
-        gap: 30px;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
+     .footer-top {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row; /* Put items side by side */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.social-links {
+    justify-content: center;
+}
+
 }
