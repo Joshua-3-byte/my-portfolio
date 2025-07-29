@@ -8,7 +8,7 @@
 
 
 body {
-    background: #f5f5f5; /* Light mode default */
+    background: #f5f5f5; 
     color: #333;
     transition: background 0.3s, color 0.3s;
 }
@@ -25,6 +25,7 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
 
+  /* he header section */
 header{
     display: flex;
     justify-content: space-between;
@@ -89,13 +90,7 @@ header{
     width: 100%;
 }
 
-a:is(:link, :active, :visited).active{
-    background: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
 
-  }
 
 .nav-icons{
     display: flex;
@@ -108,11 +103,6 @@ a:is(:link, :active, :visited).active{
     font-size: 20px;
     border: none;
 }
-
-
-
-
-
 
 .nav-icons .menu{
     font-size: 20px;
@@ -154,7 +144,6 @@ a:is(:link, :active, :visited).active{
 .hero{
 position: relative;
 background: linear-gradient(rgba(24, 24, 27, 0.2), rgba(24, 24, 27, 0.3)), url(IMAGES/header-bg-color.png); 
-
 background-position: center;
 background-size: cover;
 display: grid;
@@ -164,7 +153,6 @@ overflow: hidden;
 }
 
 .hero-section-one{
-   
     display: grid;
     place-items: center;
     margin-bottom: -200px;
@@ -273,7 +261,7 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
-
+/* About me section */
 .about-me{
     
     display: flex;
@@ -285,16 +273,12 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     
 }
-
 .about-me-left{
     margin-top: 20px;
-    
-    
 }
 
 .about-me-left img{
     width: 300px;
-    
     text-align: center;
     border-radius: 30px;
     background: yellowgreen;
@@ -304,12 +288,10 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 
 
 .about-me-right{
-    
     padding: 0 20px;
 }
 
 .about-me-right h1{
-    
     padding-left: 320px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -363,10 +345,7 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     font-family: "Poppins",;
 }
 
-.about-me-right .about-me-left-tools{
-    
-    
-}
+
 
 .about-me-right .about-me-left-tools h4{
     padding: 40px 0;
@@ -398,6 +377,7 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     transform: translateY(-20px);
 }
 
+/* services section */
 .services{
   background: rgb(206, 194, 194, 0.1);
     padding: 0 120px;
@@ -480,6 +460,7 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     color: black;
 }
 
+/* my work section */
 .my-work{
     background: url(IMAGES/header-bg-color.png);
     background-position: center;
@@ -615,6 +596,7 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
       
   }
   
+  /* contact section */
   .contact-top{
     
       text-align: center;
@@ -690,12 +672,14 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
     color: black;
   }
 
+  /* footer section */
     .footer {
     background-color: #000;
     color: #fff;
     padding: 60px 0 0;
     font-family: 'Poppins', sans-serif;
 }
+
 
 .footer-container {
     max-width: 1200px;
@@ -820,4 +804,363 @@ box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 .copyright p {
     color: #aaa;
     font-size: 14px;
+}
+
+/* responsive for mobile screens */
+  @media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-bottom: 0;
+        order: 1; /* Moves logo to center */
+    }
+
+    .nav-bar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        right: 20px;
+        flex-direction: column;
+        background: white;
+        padding: 10px 0;
+        margin-top: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .nav-bar.active {
+        display: flex;
+    }
+
+    .nav-bar li {
+        text-align: right;
+        padding: 10px 20px;
+       
+    }
+
+    .nav-icons {
+        order: 2; /* Moves nav-icons to left */
+        display: flex;
+        gap: 10px;
+        margin-top: 0;
+        width: auto;
+    }
+
+    .nav-icons .menu {
+        display: inline-block;
+        font-size: 24px;
+        background: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-right: 0;
+    }
+
+    .nav-icons .theme-toggle {
+        background: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .nav-icons li a {
+        display: none;
+    }
+
+    /* Adjust hero section if needed */
+    .hero {
+        padding-top: 100px;
+        background: linear-gradient(rgba(24, 24, 27, 0.5), rgba(24, 24, 27, 0.3)), url(IMAGES/header-bg-color.png);
+       
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        padding: 100px 20px 40px; 
+        text-align: center;
+    }
+
+    .hero-section-one {
+        display: grid;
+        place-items: center;
+        margin-bottom: 0;
+    }
+    
+    .hero-section-one img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover; /* Changed from fill to cover */
+        border: 1px solid black;
+    }
+    
+    .hero-section-one p {
+        font-size: 16px;
+        text-align: center;
+        color: black;
+        padding-top: 15px;
+        line-height: 1.4;
+    }
+    
+    .hero-section-two {
+        margin: 20px 0;
+    }
+    
+    .hero-section-two h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+    
+    .hero-section-two .second {
+        margin: 10px 0 15px;
+    }
+    
+    .hero-section-two p {
+        font-size: 16px;
+        color: black;
+        line-height: 1.5;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .hero-section-three {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .hero-section-three li {
+        list-style: none;
+        width: 100%;
+    }
+    
+    .hero-section-three li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        padding: 12px 20px;
+        background: white;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+    
+    .hero-section-three li:nth-child(1) a {
+        background: black;
+        color: white;
+    }
+    
+    .hero-section-three li a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+        background: url(IMAGES/header-bg-color.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .about-me-left {
+        order: 2; /* Image after content on mobile */
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .about-me-left img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 20px;
+        background: yellowgreen;
+        margin: 0 auto;
+    }
+    
+    .about-me-right {
+        order: 1;
+        padding: 0;
+    }
+    
+    .about-me-right h1 {
+        font-size: 24px;
+        padding: 0 0 15px 0;
+        text-align: center;
+    }
+    
+    .about-me-right p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    
+    .about-me-left-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+    }
+    
+    .about-me-left-card-container .about-me-left-card {
+        border: 2px solid peru;
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .about-me-left-card-container .about-me-left-card img {
+        width: 25px;
+    }
+    
+    .about-me-left-card-container .about-me-left-card h3 {
+        font-size: 16px;
+    }
+    
+    .about-me-left-card-container .about-me-left-card p {
+        font-size: 14px;
+    }
+    
+    .about-me-left-tools h4 {
+        padding: 25px 0 15px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .about-me-left-tools-pics {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    
+    .about-me-left-tools-pics img {
+        width: 45px;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .services {
+        padding: 0 40px;
+        
+      }
+    
+      .services-bottom {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+      .services .services-top h1 {
+        font-size: 28px;
+      }
+    
+      .services .services-top p {
+        font-size: 18px;
+      }
+
+      .my-work {
+        padding: 0 40px 30px;
+        
+      }
+    
+      .my-work .my-work-top h1 {
+        font-size: 30px;
+      }
+    
+      .my-work .my-work-top p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+    
+      .my-work-bottom {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Two columns */
+       
+      }
+    
+      .my-work-bottom .my-work-bottom-card {
+        padding: 20px;
+      }
+    
+      .my-work-bottom .my-work-bottom-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .my-work-bottom .my-work-bottom-card .overlay {
+        flex-direction: row;
+        justify-content: space-between;
+        bottom: 20px;
+        top: auto;
+        left: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        gap: 10px;
+      }
+    
+      .my-work-bottom .my-work-bottom-card .overlay-right img {
+        width: 28px;
+      }
+    
+      .my-work-bottom .my-work-bottom-card .overlay-right p {
+        font-size: 13px;
+      }
+    
+      .my-work-button {
+        margin-top: -50px;
+      }
+    
+      .my-work-button a {
+        font-size: 16px;
+        padding: 8px 20px;
+      }
+
+      .contact {
+        padding: 0 20px;
+      }
+    
+      .contact-top h1 {
+        font-size: 1.5rem;
+      }
+    
+      .contact-top p {
+        font-size: 1rem;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
 }
